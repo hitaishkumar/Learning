@@ -1,5 +1,5 @@
-a = "XY32"
-b = "Y1X2"
+# a = "XY32"
+# b = "Y1X2"
 def shuffle(a,b):
     counter = 0
     for i in a:
