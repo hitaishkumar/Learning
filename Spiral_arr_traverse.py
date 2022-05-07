@@ -12,7 +12,7 @@ while(rowbegin < rowend and colbegin < colend):
     for i in range(colbegin,colend):
         print(m[rowbegin][i])
         output.append(m[rowbegin][i])
-    for j in range(rowbegin,rowend):
+    for j in range(rowbegin + 1,rowend):
         print(m[j][colend-1])
         output.append(m[j][colend-1])
     if rowend != rowbegin +1:
