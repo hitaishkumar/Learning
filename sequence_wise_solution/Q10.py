@@ -1,5 +1,5 @@
 # Minimum no. of Jumps to reach end of an array
-
+# https://youtu.be/dJ7sWiOoK7g
 import random
 ra= []
 for i in range(6):
