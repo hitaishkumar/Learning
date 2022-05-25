@@ -5,18 +5,32 @@
 def findrot(a, c) -> bool:
     if len(a) == len(b):
         for i in range(len(a)):
-            b = ""  
+            b = ""
             d = a[i+1:]
             e = a[0:i+1]
             b = d + e
             # print(b) if want to see the shuffle
             if c == b:
                 return True
-        
+
     return False
-    
+
 # Basic method of checking with O(n^2)
-print(findrot("abcd","dabc"))
+# print(findrot("abcd","dabc"))
 
 
 # usage of KMP algorithm
+
+def kmp(a: str, b: str) -> bool:
+    c = a+a
+    if len(a) == len(b):
+        for i in range(len(c)):
+            d = c[i:len(a)+i]
+            if len(d) == len(b):
+                # print(d)
+                if d == b:
+                    return True
+    return False
+
+
+print(kmp("abcdf", "cdeab"))
