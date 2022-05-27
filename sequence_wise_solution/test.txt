@@ -1,0 +1,9 @@
+
+10 is the duplicate in 1_2_3_4_5_6_7_8_9_10_10
+1 is the duplicate in 1_1_2_3_4_5_6_7_8_9_10
+5 is the duplicate in 1_2_3_4_5_5_6_7_8_9_10
+9 is the duplicate in 1_2_3_4_5_6_7_8_9_9_10
+10 is the duplicate in 1_2_3_4_5_6_7_8_9_10_10
+3 is the duplicate in 1_2_3_3_4_5_6_7_8_9_10
+6 is the duplicate in 1_2_3_4_5_6_6_7_8_9_10
+7 is the duplicate in 1_2_3_4_5_6_7_7_8_9_10
