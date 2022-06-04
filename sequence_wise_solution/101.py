@@ -2,17 +2,12 @@
 
 # First and Last Position of Element in Sorted Array - Binary Search 
 
-import Impfunc as im
-
-a = im.createarray(12,2,15)
-a.sort()
-
 def solution(arr: list , target:int):
     left = binary_search(arr,target,True)
     right = binary_search(arr,target,False)
     return [left,right]
 
-def binary_search(a: list,t,leftbias: bool):
+def binary_search(a: list,t:int,leftbias: bool):
     
     # print(f"{a} --> before sorted")
     # a.sort()
@@ -33,7 +28,7 @@ def binary_search(a: list,t,leftbias: bool):
             else:
                 l = m + 1 
         return i
-a.sort()
+a = [4, 5, 5, 5, 7, 8, 10, 12, 12, 13, 13, 15]
 print(a)
 print(solution(a,5))
 # print(k)
