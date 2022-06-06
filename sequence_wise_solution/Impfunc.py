@@ -17,9 +17,9 @@ def binary_search(a: list,target) -> int :
     
     while l<=r:
         m = (l+r)//2
-        if t > a[m]:
+        if target > a[m]:
             l = m+1
-        elif t < a[m]:
+        elif target < a[m]:
             r = m-1
         else:
             # print(m)
