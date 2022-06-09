@@ -24,10 +24,10 @@ def binary_search(a: list,target) -> int :
         else:
             # print(m)
             return m
-def ispalindrome(a:str) -> bool:
+def ispalindrome(a) -> bool:
     '''Reverse a string -> a[::-1] 
        compare with original'''
-    
+    a = str(a)
     return a == a[::-1] 
 
 
