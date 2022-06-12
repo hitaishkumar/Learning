@@ -1,0 +1,20 @@
+Convert Python list to Dictionaries:
+https://careerkarma.com/blog/python-convert-list-to-dictionary/#:~:text=To%20convert%20a%20list%20to%20a%20dictionary%20using%20the%20same,the%20values%20of%20a%20list.
+3 methods: 
+-> fruits = ["Apple", "Pear", "Peach", "Banana"]
+
+fruit_dictionary = dict.fromkeys(fruits, "In stock")
+
+print(fruit_dictionary)
+
+-> fruits = ["Apple", "Pear", "Peach", "Banana"]
+
+fruit_dictionary = { fruit : "In stock" for fruit in fruits }
+
+print(fruit_dictionary)
+
+-> fruits = ["Apple", "Pear", "Peach", "Banana"]
+
+prices = [0.35, 0.40, 0.40, 0.28]
+
+fruit_dictionary = dict(zip(fruits, prices))
