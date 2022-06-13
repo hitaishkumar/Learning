@@ -1,7 +1,6 @@
 # Subarray sum equals K | Number of subarrays with sum equals K | Leetcode #560
 # https://www.youtube.com/watch?v=HbbYPQc-Oo4&ab_channel=TECHDOSE
 
-from Impfunc import pav
 
 
 k = 10
