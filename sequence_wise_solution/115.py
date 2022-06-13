@@ -16,7 +16,6 @@ for nums in a:
     
     count+= map.get(diff , 0)
     map[Curr_sum] = 1+ map.get(Curr_sum , 0)
-pav()
 print(count)
 all_variables = dir()
 
