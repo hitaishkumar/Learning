@@ -1,4 +1,4 @@
-def createarray(len: int , starting:int , finish:int) -> list:
+def createarray(len: int = 20 , starting:int = 1 , finish:int = 10) -> list:
     import random
     arr= []
     for i in range(len):
