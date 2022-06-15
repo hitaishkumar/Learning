@@ -29,7 +29,13 @@ def ispalindrome(a) -> bool:
        compare with original'''
     a = str(a)
     return a == a[::-1] 
-
+def revarray(a:list , start:int ,end: int) -> list:
+    ''' reverses a array recursively'''
+    if(start < end):
+        a[start] , a[end] = a[end], a[start]
+        # print(a)
+        revarray(a,start + 1 , end -1)
+    return a
 
 def iseven(a) -> bool:
     a = int(a)
