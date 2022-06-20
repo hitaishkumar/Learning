@@ -32,7 +32,16 @@ def ispalindrome(a) -> bool:
 
 
 def iseven(a) -> bool:
+    ''' takes any convert to int'''
     a = int(a)
     if a % 2 == 0:
         return True
     return False
+
+def isprime(a) -> bool:
+    ''' takes any convert to int'''
+    a = int(a)
+    for i in range(2,a):
+        if a % i == 0:
+            return False
+    return True
