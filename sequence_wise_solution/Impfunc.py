@@ -45,7 +45,6 @@ def isprime(a) -> bool:
         if a % i == 0:
             return False
     return True
-# https://www.youtube.com/watch?v=R_wDA-PmGE4&ab_channel=FelixTechTips ---> INSERTION SORT
 def insertionsort(arr:list) -> list:
     ''' input : list  output : list'''
     leng = len(arr)
@@ -56,6 +55,7 @@ def insertionsort(arr:list) -> list:
             # print(f" here {a[j-1]} is swapped with {a[j]} and the array is{arr} ")
             j -= 1
     return arr
+# https://www.youtube.com/watch?v=R_wDA-PmGE4&ab_channel=FelixTechTips ---> INSERTION SORT
 
 # a = createarray(5,1,100)
 # print(a)
