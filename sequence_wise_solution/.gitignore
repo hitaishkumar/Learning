@@ -1,0 +1,6 @@
+tempCodeRunnerFile.py
+test.py
+*.pyc
+*/*/*/__pycache__/
+*/*/__pycache__/
+*/__pycache__/
