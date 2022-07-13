@@ -1,4 +1,6 @@
 '''Reverse an array'''
+
+#  https://www.youtube.com/watch?v=twuC1F6gLI8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=4&ab_channel=takeUforward
 import random
 a =[]
 for i in range(10):
