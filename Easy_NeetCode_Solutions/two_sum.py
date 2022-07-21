@@ -1,12 +1,12 @@
 import random
 
 a = [random.randint(1, 20) for i in range(50)]
-print (a)
+# print (a)
 
 target = 5
 
 a.sort()
-print (a)
+# print (a)
 b = a
 start = 0
 end = len(b) - 1
