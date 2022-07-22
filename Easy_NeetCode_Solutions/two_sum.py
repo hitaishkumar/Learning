@@ -17,6 +17,8 @@ while(start< end):
         start += 1
     else:
         end -= 1
+        
+        
     if  sum == target:
         print(f" {b[start]} at index {start}, {b[end]} at index  {end}, have a sum of {sum}")
         break
