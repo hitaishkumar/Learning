@@ -19,6 +19,8 @@ select round(max(lat_n), 4) from station where lat_n < 137.2345 ;
 
 select round(long_w, 4) from station where lat_n = (select max(lat_n) from station where lat_n < 137.2345)
 
--- Query the smallest Northern Latitude (LAT_N) from STATION that is greater than . Round your answer to  decimal places.
+-- Query the Western Longitude (LONG_W)where the smallest Northern Latitude (LAT_N) in STATION is greater than . Round your answer to  decimal places.
+select round(long_w,4)
+from station 
+where lat_n = (select min(lat_n) from station where lat_n > 38.7780)
 
-select round(min(lat_n),4) from station where lat_n > 38.7780 order by lat_n asc limit 1
