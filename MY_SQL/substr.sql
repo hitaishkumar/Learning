@@ -11,3 +11,6 @@ select name from employee order by name
     --The sum of all values in LONG_W rounded to a scale of  decimal places.
 
 select round(sum(lat_n),2) , round(sum(long_w),2) from station
+
+-- Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is less than 137.2345. Truncate your answer to  decimal places.
+select round(max(lat_n), 4) from station where lat_n < 137.2345 ;
