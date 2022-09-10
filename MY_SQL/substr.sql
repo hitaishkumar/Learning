@@ -24,3 +24,5 @@ select round(long_w,4)
 from station 
 where lat_n = (select min(lat_n) from station where lat_n > 38.7780)
 
+-- Eucliidan distance between two points
+select round(power(power(max(lat_n) - min(lat_n),2) +  power(max(long_w) - min(long_w),2),0.5),4) from station
