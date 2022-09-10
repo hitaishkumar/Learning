@@ -14,3 +14,7 @@ select round(sum(lat_n),2) , round(sum(long_w),2) from station
 
 -- Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is less than 137.2345. Truncate your answer to  decimal places.
 select round(max(lat_n), 4) from station where lat_n < 137.2345 ;
+
+-- Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than . Round your answer to  decimal places.
+
+select round(long_w, 4) from station where lat_n = (select max(lat_n) from station where lat_n < 137.2345)
