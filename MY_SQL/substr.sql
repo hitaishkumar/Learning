@@ -26,3 +26,19 @@ where lat_n = (select min(lat_n) from station where lat_n > 38.7780)
 
 -- Eucliidan distance between two points
 select round(power(power(max(lat_n) - min(lat_n),2) +  power(max(long_w) - min(long_w),2),0.5),4) from station
+
+
+
+--- How to use CASE statements for SQL--
+-- tabel of - A |  B  | C
+            -------------
+--          -20 |  20 | 23
+--          -21 |  21 | 21
+--          -12 |  45 | 2
+SELECT CASE
+        WHEN A + B <= C OR B + C <= A OR A + C <= B THEN 'Not A Triangle'
+        WHEN A = B AND B = C AND A = C THEN 'Equilateral'
+        WHEN A = B OR A = C OR B = C THEN 'Isosceles'
+        WHEN A != B AND B != C THEN 'Scalene'
+        END triangle
+FROM TRIANGLES;
