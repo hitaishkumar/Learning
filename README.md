@@ -10,3 +10,4 @@ Learning Git and DSA
 ## 3.  [My progress on the DSA sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vTsGVUccK8ti9-FqZ03A4jcWtA1qrUsbJN5_dXNr3xn2W00HOJQmTmcMVXsQqdNOw/pubhtml?gid=1714658696&single=true)
 
 ## 4. Currently Busy on [LeetCode](https://leetcode.com/hk_davy/)
+![LeetStats](https://leetcode-stat-api.herokuapp.com/hk_davy/)
