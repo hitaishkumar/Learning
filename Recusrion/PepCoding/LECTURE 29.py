@@ -1,7 +1,5 @@
 '''Get Stairs Path - Solution | Recursion | Data Structures and Algorithms in JAVA
 '''
-
-
 a = ""
 b = "d" + a
 print(b)
@@ -17,16 +15,16 @@ def getstairpath(num):
     c = getstairpath(num-3)
     
     
-    for i in a:
-        i  = '1' + i
-    for i in b:
-        i  = '2' + i
-    for i in c:
-        i  = '3' + i
     ans = []
-    ans.extend(a)
-    ans.extend(b)
-    ans.extend(c)
+    for i in a:
+        ans.append(i + "1")
+    for i in b:
+        ans.append(i + "2")
+    for i in c:
+        ans.append(i + "3")
+    # ans.extend(a)
+    # ans.extend(b)
+    # ans.extend(c)
     
     return ans
 print(getstairpath(4))
